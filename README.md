@@ -19,6 +19,7 @@ To start, you can customize the duration of your Focus, Short Break, and Long Br
 
 ## Tools and Technologies
 
+<div align="left">
 <img src="./public/html.png" alt="HTML" width="50" title="HTML">
 <img src="./public/css.png" alt="CSS" width="50" title="CSS">
 <img src="./public/js.png" alt="JavaScript" width="50" title="JavaScript">
@@ -29,6 +30,7 @@ To start, you can customize the duration of your Focus, Short Break, and Long Br
 <img src="./public/npm.png" alt="NPM" width="50" title="NPM">
 <img src="./public/vite.png" alt="Vite" width="50" title="Vite">
 <img src="./public/vscode.png" alt="Visual Studio Code" width="50" title="Visual Studio Code">
+</div>
 
 ## Installation and Usage
 
