@@ -34,8 +34,8 @@ To start, you can customize the duration of your Focus, Short Break, and Long Br
 
 ## Installation and Usage
 
-1. Clone the repository: `git clone `
-2. Navigate to the project directory: `cd Flow Zone`
+1. Clone the repository: `git clone https://github.com/akosikhada/flow-zone.git`
+2. Navigate to the project directory: `cd flow-zone`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
 
