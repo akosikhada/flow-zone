@@ -49,4 +49,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Inspired by pomofocus.io
 
-[![Inspired by pomofocus.io](https://img.shields.io/badge/Inspired_by-pomofocus.io-ff69b4?style=for-readme&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=)](https://pomofocus.io)
+## Inspired by pomofocus.io
+
+[![Inspired by pomofocus.io](https://img.shields.io/badge/Inspired_by-pomofocus.io-ff69b4?style=for-readme&logo=https://via.placeholder.com/150)](https://pomofocus.io)
+
