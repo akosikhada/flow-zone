@@ -6,6 +6,7 @@ import Modal from "./components/Modal/Modal";
 import { useState } from "react";
 import { FaCog } from "react-icons/fa";
 import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +30,7 @@ function App() {
         <FaCog />
       </Icon>
       <About />
+      <Footer />
     </>
   );
 }
