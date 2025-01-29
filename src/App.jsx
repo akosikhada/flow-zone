@@ -3,19 +3,34 @@ import Tags from "./components/Tags/Tags";
 import Timer from "./components/Timer/Timer";
 import logo from "/logo-white.png";
 import Modal from "./components/Modal/Modal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaCog } from "react-icons/fa";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
+import Loader from "./components/Loader/Loader";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
   const onOpen = () => {
     setIsOpen(true);
   };
   const onClose = () => {
     setIsOpen(false);
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loader />;
+  }
 
   return (
     <>
