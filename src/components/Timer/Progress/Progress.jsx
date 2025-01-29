@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import { useState } from "react";
-import Clock from "./Clock";
+import { useContext } from "react";
+import Clock from "./Clock/Clock";
+import { StateContext } from "../../StateProvider";
 
 const Progress = () => {
-  const [progress, setProgress] = useState(55);
+  const { progress, setProgress } = useContext(StateContext);
   return (
     <OuterCircle progress={progress}>
       <InnerCircle>

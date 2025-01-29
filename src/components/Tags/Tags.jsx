@@ -1,8 +1,9 @@
 import styled, { css } from "styled-components";
-import { useState } from "react";
+import { useContext } from "react";
+import { StateContext } from "../StateProvider";
 
 const Tags = () => {
-  const [activeTag, setActiveTag] = useState(0);
+  const { activeTag, setActiveTag } = useContext(StateContext);
 
   const handleTagClick = (index) => {
     setActiveTag(index);

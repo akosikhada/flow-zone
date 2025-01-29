@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Progress from "./Progress";
+import Progress from "./Progress/Progress";
 
 const Timer = () => {
   return (
