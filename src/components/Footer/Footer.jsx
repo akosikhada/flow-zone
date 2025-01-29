@@ -13,7 +13,7 @@ export default Footer;
 
 const FooterContainer = styled.footer`
   width: fit-content;
-  height: fit-content;
+  height: 4rem;
   margin: 0 auto;
 `;
 
