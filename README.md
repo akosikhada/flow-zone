@@ -30,6 +30,7 @@ To start, you can customize the duration of your Focus, Short Break, and Long Br
 <img src="./public/npm.png" alt="NPM" width="50" title="NPM">
 <img src="./public/vite.png" alt="Vite" width="50" title="Vite">
 <img src="./public/vscode.png" alt="Visual Studio Code" width="50" title="Visual Studio Code">
+<img src="./public/vercel.png" alt="Vercel" width="50" title="Vercel">
 </div>
 
 ## Installation and Usage
@@ -51,3 +52,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 [![Inspired by pomofocus.io](https://img.shields.io/badge/Inspired_by-pomofocus.io-ff69b4?style=for-readme&logo=https://via.placeholder.com/150)](https://pomofocus.io)
 
+## Acknowledgments
+
+Special thanks to David Goggins for providing the motivational voice for the alarm. His inspiring words help keep users focused and driven throughout their Pomodoro sessions.
