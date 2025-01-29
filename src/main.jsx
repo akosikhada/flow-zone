@@ -9,6 +9,12 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 html, body {
@@ -19,7 +25,9 @@ html, body {
 body {
   font-size: 1.5rem;
   color: #FFFFFF;
+  overflow-y: scroll;
 }
+
 `;
 
 const theme = {

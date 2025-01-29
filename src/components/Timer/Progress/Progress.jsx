@@ -22,8 +22,8 @@ const Progress = () => {
 export default Progress;
 
 const OuterCircle = styled.div`
-  width: 35rem;
-  height: 35rem;
+  width: 40rem;
+  height: 40rem;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -31,12 +31,23 @@ const OuterCircle = styled.div`
     ${(props) => props.theme.colors.primary} ${({ progress }) => progress}%,
     transparent ${({ progress }) => progress}%
   );
+
+  @media (max-width: 768px) {
+    width: 30rem;
+    height: 30rem;
+  }
 `;
+
 const InnerCircle = styled.div`
-  width: 33rem;
-  height: 33rem;
+  width: 38rem;
+  height: 38rem;
   background: ${(props) => props.theme.colors.secondary};
   border-radius: 50%;
   display: grid;
   place-items: center;
+
+  @media (max-width: 768px) {
+    width: 28rem;
+    height: 28rem;
+  }
 `;

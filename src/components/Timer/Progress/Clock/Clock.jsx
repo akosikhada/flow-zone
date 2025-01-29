@@ -80,6 +80,10 @@ const ClockContainer = styled.div`
 
 const TimerText = styled.h3`
   font-size: 10rem;
+
+  @media (max-width: 768px) {
+    font-size: 8rem;
+  }
 `;
 
 const StartPauseButton = styled.button`
@@ -110,6 +114,11 @@ const StartPauseButton = styled.button`
     background: #666666;
     transform: scale(0.95);
   }
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+  }
 `;
 
 const ResetButton = styled(StartPauseButton)`
@@ -122,5 +131,9 @@ const ResetButton = styled(StartPauseButton)`
 
   &:active {
     background: #a93226;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 0.5rem;
   }
 `;

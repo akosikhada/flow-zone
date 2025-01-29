@@ -39,6 +39,10 @@ const TagsContainer = styled.div`
   display: flex;
   gap: 1rem;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 35rem;
+  }
 `;
 
 const Tag = styled.button`
@@ -70,4 +74,8 @@ const Tag = styled.button`
         background: #666666;
       }
     `}
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;

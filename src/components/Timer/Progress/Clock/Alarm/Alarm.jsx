@@ -78,4 +78,8 @@ const SnoozeButton = styled.button`
     background: #666666;
     transform: scale(0.95);
   }
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;

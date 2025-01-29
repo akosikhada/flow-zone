@@ -37,16 +37,29 @@ export default About;
 const AboutContainer = styled.div`
   width: 100%;
   margin: 8rem auto;
+
+  @media (max-width: 768px) {
+    margin: 4rem auto;
+  }
 `;
 
 const ContentWrapper = styled.div`
   max-width: 60rem;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    margin: 0 1rem;
+  }
 `;
 
 const AboutTitle = styled.h1`
   font-size: 4rem;
   margin-top: 1.25rem;
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
 `;
 
 const Highlight = styled.span`
@@ -59,6 +72,12 @@ const AboutText = styled.p`
   opacity: 0.7;
   font-size: 2rem;
   word-break: break-word;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: justify;
+  }
 `;
 
 const Link = styled.a`
@@ -67,5 +86,8 @@ const Link = styled.a`
   font-size: 1.75rem;
   font-weight: 600;
   text-transform: uppercase;
-`;
 
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+`;
