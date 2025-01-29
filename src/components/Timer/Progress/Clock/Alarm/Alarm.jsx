@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { useEffect, useContext } from "react";
 import { FaBell } from "react-icons/fa";
-import alarmSound from "/alarm.mp3";
+import alarmSoundOne from "/alarm.mp3";
+import alarmSoundTwo from "/alarm-2.mp3";
 import { StateContext } from "../../../../StateProvider";
 
 const Alarm = () => {
@@ -13,19 +14,28 @@ const Alarm = () => {
     setTime,
     initTime,
     setIsActive,
+    activeTag,
   } = useContext(StateContext);
 
   useEffect(() => {
-    const newAudio = new Audio(alarmSound);
-    newAudio.loop = true;
-    newAudio.play();
-    setAudio(newAudio);
+    let newAudio;
+    if (activeTag === 0) {
+      newAudio = new Audio(alarmSoundTwo);
+    } else if (activeTag === 1 || activeTag === 2) {
+      newAudio = new Audio(alarmSoundOne);
+    }
 
-    return () => {
-      newAudio.pause();
-      newAudio.currentTime = 0;
-    };
-  }, [setAudio]);
+    if (newAudio) {
+      newAudio.loop = true;
+      newAudio.play();
+      setAudio(newAudio);
+
+      return () => {
+        newAudio.pause();
+        newAudio.currentTime = 0;
+      };
+    }
+  }, [setAudio, activeTag]);
 
   const handleSnooze = () => {
     if (audio) {
