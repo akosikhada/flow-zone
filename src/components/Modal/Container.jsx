@@ -134,8 +134,8 @@ const ModalContent = styled(motion.div)`
   border-radius: 1rem;
 
   @media (max-width: 768px) {
-    width: 90%;
-    height: auto;
+    width: 35rem;
+    height: 43rem;
   }
 `;
 
