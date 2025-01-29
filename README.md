@@ -26,6 +26,7 @@ To start, you can customize the duration of your Focus, Short Break, and Long Br
 <img src="./public/js.png" alt="JavaScript" width="50" title="JavaScript">
 <img src="./public/styled.png" alt="Styled Components" width="50" title="Styled Components">
 <img src="./public/react.png" alt="React" width="50" title="React">
+<img src="./public/framer.png" alt="Framer Motion" width="50" title="Framer Motion">
 <img src="./public/git.png" alt="Git" width="50" title="Git">
 <img src="./public/github.png" alt="Github" width="50" title="Github">
 <img src="./public/npm.png" alt="NPM" width="50" title="NPM">
