@@ -40,6 +40,10 @@ const Header = styled.div`
   align-items: center;
   justify-content: center;
   padding: 2rem 0;
+
+  @media (max-width: 768px) {
+    padding: 1rem 0;
+  }
 `;
 
 const Logo = styled.img`
@@ -51,6 +55,10 @@ const Logo = styled.img`
 const Title = styled.h1`
   font-size: 6rem;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 4rem;
+  }
 `;
 
 const Icon = styled.div`
@@ -64,5 +72,9 @@ const Icon = styled.div`
 
   &:hover {
     transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.9);
   }
 `;

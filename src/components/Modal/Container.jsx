@@ -135,7 +135,7 @@ const ModalContent = styled(motion.div)`
 
   @media (max-width: 768px) {
     width: 35rem;
-    height: 43rem;
+    height: auto;
   }
 `;
 
@@ -304,6 +304,7 @@ const SourceCodeButton = styled.a`
   cursor: pointer;
   text-decoration: none;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   transition: background 0.3s ease;
 
   &:hover {
