@@ -16,6 +16,7 @@ To start, you can customize the duration of your Focus, Short Break, and Long Br
 - Visual timer progress bar
 - Sound notifications (optional)
 - Ability to customize timer durations
+- Responsive design for mobile and desktop devices
 
 ## Tools and Technologies
 
