@@ -15,6 +15,7 @@ const Alarm = () => {
     initTime,
     setIsActive,
     activeTag,
+    setShowAlarm,
   } = useContext(StateContext);
 
   useEffect(() => {
@@ -45,6 +46,7 @@ const Alarm = () => {
     setShowSnooze(false);
     setTime(initTime);
     setIsActive(false);
+    setShowAlarm(false);
   };
 
   return (
