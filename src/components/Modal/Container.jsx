@@ -18,6 +18,12 @@ const GlobalStyle = createGlobalStyle`
   body {
     overflow-y: scroll;
   }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 `;
 
 const Container = ({ isOpen, onClose }) => {
@@ -71,19 +77,19 @@ const Container = ({ isOpen, onClose }) => {
                     <label htmlFor="focus">
                       <FaClock fontSize="1.5rem" /> Focus
                     </label>
-                    <Field name="focus" min="1" max="60" />
+                    <Field type="number" name="focus" min="1" max="60" />
                   </FormControl>
                   <FormControl>
                     <label htmlFor="short">
                       <FaCoffee fontSize="1.5rem" /> Short Break
                     </label>
-                    <Field name="short" min="1" max="60" />
+                    <Field type="number" name="short" min="1" max="60" />
                   </FormControl>
                   <FormControl>
                     <label htmlFor="long">
                       <FaBed fontSize="1.5rem" /> Long Break
                     </label>
-                    <Field name="long" min="1" max="60" />
+                    <Field type="number" name="long" min="1" max="60" />
                   </FormControl>
                 </InputWrapper>
                 <ButtonWrapper>
