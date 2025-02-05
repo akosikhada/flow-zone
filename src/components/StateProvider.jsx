@@ -16,6 +16,10 @@ const StateProvider = ({ children }) => {
   const [audio, setAudio] = useState(null);
   const [showSnooze, setShowSnooze] = useState(true);
   const [showReset, setShowReset] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [tasks, setTasks] = useState([]);
+  const [newTask, setNewTask] = useState("");
 
   useEffect(() => {
     switch (activeTag) {
@@ -63,6 +67,14 @@ const StateProvider = ({ children }) => {
         setShowSnooze,
         showReset,
         setShowReset,
+        isOpen,
+        setIsOpen,
+        isLoading,
+        setIsLoading,
+        tasks,
+        setTasks,
+        newTask,
+        setNewTask,
       }}
     >
       {children}
