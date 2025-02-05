@@ -20,6 +20,7 @@ const StateProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
+  const [inputError, setInputError] = useState("");
 
   useEffect(() => {
     switch (activeTag) {
@@ -75,6 +76,8 @@ const StateProvider = ({ children }) => {
         setTasks,
         newTask,
         setNewTask,
+        inputError,
+        setInputError,
       }}
     >
       {children}
