@@ -1,12 +1,12 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import styled from "styled-components";
 import { FaCheck, FaTrash } from "react-icons/fa";
 import { StateContext } from "../StateProvider";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Task = () => {
-  const { tasks, setTasks, newTask, setNewTask } = useContext(StateContext);
-  const [inputError, setInputError] = useState("");
+  const { tasks, setTasks, newTask, setNewTask, inputError, setInputError } =
+    useContext(StateContext);
 
   const handleAddTask = () => {
     if (newTask.trim() === "") {
@@ -84,6 +84,7 @@ const TaskContainer = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
   @media (max-width: 768px) {
+    max-width: 30rem;
     padding: 1rem;
   }
 `;
@@ -91,7 +92,6 @@ const TaskContainer = styled.div`
 const AddTaskContainer = styled.div`
   display: flex;
   gap: 1rem;
-  margin-bottom: 2rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -104,7 +104,6 @@ const TaskInput = styled.input`
   padding: 0.5rem;
   font-size: 1.5rem;
   font-weight: 600;
-  text-transform: uppercase;
   border: 1px solid ${(props) => props.theme.colors.secondary};
   border-radius: 0.5rem;
   background: ${(props) => props.theme.colors.primary};
