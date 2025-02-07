@@ -75,7 +75,7 @@ export default Task;
 
 const TaskContainer = styled.div`
   width: 100%;
-  max-width: 40rem;
+  max-width: 50rem;
   margin: 0 auto;
   padding: 2rem;
   background: ${(props) => props.theme.colors.background};
@@ -146,7 +146,6 @@ const TaskList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
-  text-transform: capitalize;
 `;
 
 const TaskItem = styled.div`
@@ -154,6 +153,7 @@ const TaskItem = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  margin-top: 1rem;
   background: ${(props) => (props.done ? "#1a1a1a" : "#333333")};
   border-bottom: 1px solid ${(props) => props.theme.colors.secondary};
   border-radius: 0.5rem;
@@ -179,13 +179,14 @@ const ErrorMessage = styled.p`
 
 const TaskText = styled.span`
   flex: 1;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
+  font-family: monospace;
   text-decoration: ${(props) => (props.done ? "line-through" : "none")};
   color: ${(props) => (props.done ? "#888" : "#fff")};
 
   @media (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `;
 
