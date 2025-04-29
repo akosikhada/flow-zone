@@ -101,7 +101,7 @@ const Container = ({ isOpen, onClose }) => {
             </Formik>
             <Description>
               This is an open-source project aimed at helping users manage their
-              time effectively. Feel free to contribute and improve the project!
+              time effectively.
             </Description>
             <SourceCodeButton
               href="https://github.com/akosikhada/flow-zone.git"
