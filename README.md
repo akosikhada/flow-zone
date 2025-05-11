@@ -5,9 +5,9 @@
 </p>
 
 <div align="center">
-  <h3>
+  <h4>
     A modern, elegant Pomodoro timer application designed to boost your productivity by implementing the time-tested Pomodoro Technique. Flow Zone helps you maintain focus, manage tasks, and balance work with proper rest intervals.
-  </h3>
+  </h4>
 </div>
 
 ## ✨ Overview
