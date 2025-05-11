@@ -1,7 +1,6 @@
-import { createContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-
-export const StateContext = createContext();
+import { StateContext } from "../context/GlobalContext";
 
 const StateProvider = ({ children }) => {
   const [focusTime, setFocusTime] = useState(25 * 60);
