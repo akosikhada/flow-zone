@@ -109,6 +109,8 @@ const Tag = styled.button`
   color: ${(props) => (props.$active ? "white" : "rgba(255, 255, 255, 0.7)")};
   text-shadow: ${(props) =>
     props.$active ? "0 1px 2px rgba(0, 0, 0, 0.1)" : "none"};
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 
   &:focus-visible {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
