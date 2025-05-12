@@ -23,4 +23,5 @@ const BackdropStyled = styled(motion.div)`
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(3px);
+  -webkit-tap-highlight-color: transparent;
 `;
