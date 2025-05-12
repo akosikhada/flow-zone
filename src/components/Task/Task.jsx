@@ -13,7 +13,9 @@ const Task = () => {
     e?.preventDefault(); // Handle form submission
 
     if (newTask.trim() === "") {
-      setInputError("Please enter a task before adding.");
+      setInputError(
+        "Task description is required. Please provide details before adding."
+      );
     } else {
       setTasks([...tasks, { text: newTask, done: false, id: Date.now() }]);
       setNewTask("");
@@ -251,6 +253,8 @@ const AddButton = styled.button`
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
   white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 
   svg {
     font-size: 1.4rem;
@@ -345,6 +349,8 @@ const CheckCircle = styled.button`
   padding: 0;
   cursor: pointer;
   transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 
   ${(props) =>
     props.$done &&
@@ -398,6 +404,8 @@ const DeleteButton = styled.button`
   cursor: pointer;
   margin-left: 1rem;
   transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 
   svg {
     font-size: 1.4rem;
