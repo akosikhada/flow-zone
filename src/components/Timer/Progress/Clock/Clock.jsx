@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useEffect, useContext, useCallback, useRef } from "react";
+import { useEffect, useContext } from "react";
 import { StateContext } from "../../../../context/GlobalContext";
 import Alarm from "../Clock/Alarm/Alarm";
 import { FaPlay, FaPause, FaRedo } from "react-icons/fa";
@@ -197,6 +197,8 @@ const StartPauseButton = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 
   svg {
     font-size: 2rem;
@@ -238,6 +240,8 @@ const ResetButton = styled(motion.button)`
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 
   svg {
     font-size: 1.6rem;
