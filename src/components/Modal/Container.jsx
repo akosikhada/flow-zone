@@ -269,6 +269,8 @@ const ModalCloseButton = styled(motion.button)`
   justify-content: center;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.7);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 
   svg {
     font-size: 2.8rem;
@@ -320,6 +322,7 @@ const FormControl = styled.div`
     align-items: center;
     gap: 0.8rem;
     color: rgba(255, 255, 255, 0.9);
+    -webkit-tap-highlight-color: transparent;
 
     svg {
       color: #e74c3c;
@@ -342,6 +345,7 @@ const FormControl = styled.div`
     appearance: textfield;
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
+    -webkit-tap-highlight-color: transparent;
 
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
@@ -394,6 +398,8 @@ const ApplyButton = styled(motion.button)`
   border-radius: 0.8rem;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 
   svg {
     font-size: 1.8rem;
@@ -444,6 +450,8 @@ const SourceCodeButton = styled(motion.a)`
   cursor: pointer;
   text-decoration: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 
   svg {
     font-size: 1.8rem;
