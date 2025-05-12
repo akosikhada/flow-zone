@@ -98,9 +98,14 @@ const AboutText = styled.p`
   font-size: 1.6rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.02rem;
 
   @media (max-width: 768px) {
     font-size: 1.5rem;
+    text-align: justify;
+    letter-spacing: 0.03rem;
+    word-spacing: 0.05rem;
+    hyphens: auto;
   }
 `;
 
@@ -109,6 +114,7 @@ const Link = styled.a`
   font-weight: 700;
   text-decoration: underline;
   transition: color 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
 
   &:hover,
   &:focus {
