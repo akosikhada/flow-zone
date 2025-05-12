@@ -170,6 +170,8 @@ const DismissButton = styled.button`
   transition: all 0.3s ease;
   gap: 0.8rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 
   svg {
     font-size: 1.8rem;
