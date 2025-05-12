@@ -179,6 +179,8 @@ const SettingsIcon = styled.button`
   z-index: 100;
   border: none;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 
   @media (max-width: 768px) {
     bottom: 2rem;
